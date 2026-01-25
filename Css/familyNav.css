@@ -12,7 +12,6 @@ nav {
   left: 0;
   z-index: 200;
   top: 0;
-  flex-wrap: nowrap;
 }
 
 h1 {
