@@ -3,18 +3,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
 body {
   background: #ffffff;
   color: #000;
   transition: background 0.3s, color 0.3s;
-}
-
-body.dark {
-  background: #0f172a;
-  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body.dark nav {
@@ -23,19 +20,94 @@ body.dark nav {
   box-shadow: 0 3px 5px rgba(255, 255, 255, 0.15);
 }
 
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+body.dark {
+  background: #0f172a;
+  color: #ffffff;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(0, 1fr);
   grid-gap: 10px;
-  grid-row-gap: 10px;
   padding: 0 20px;
-  padding-top: 100px;
+  padding-top: 130px;
+  padding-bottom: 20px;
+  flex: 1;
 }
 
-img {
-  width: 100%;
-  border-radius: 5px;
-  cursor: pointer;
+.pic1 {
+  background-image: url("../Img/School/IMG_4187 2.jpg");
+}
+
+.pic2 {
+  background-image: url("../Img/School/IMG_1094 2.jpg");
+}
+
+.pic3 {
+  background-image: url("../Img/School/IMG_2753 2.jpg");
+}
+
+.pic4 {
+  background-image: url("../Img/School/IMG_4186 2.jpg");
+}
+
+.pic5 {
+  background-image: url("../Img/School/IMG_4193 2.jpg");
+}
+
+.pic6 {
+  background-image: url("../Img/School/IMG_4270 2.jpg");
+}
+
+.pic7 {
+  background-image: url("../Img/School/IMG_4261 2.jpg");
+}
+
+.pic8 {
+  background-image: url("../Img/School/IMG_4264 2.jpg");
+}
+
+.pic9 {
+  background-image: url("../Img/School/IMG_4269 2.jpg");
+}
+
+.pic10 {
+  background-image: url("../Img/School/IMG_4280 2.jpg");
+}
+
+.pic11 {
+  background-image: url("../Img/School/IMG_4285 2.jpg");
+}
+
+.pic12 {
+  background-image: url("../Img/School/IMG_4277 2.jpg");
+}
+
+.pic13 {
+  background-image: url("../Img/School/IMG_4189 2.jpg");
+}
+
+.pic14 {
+  background-image: url("../Img/School/IMG_2886.jpg");
+}
+
+.pic15 {
+  background-image: url("../Img/School/IMG_7040.JPG");
+}
+
+.pic16 {
+  background-image: url("../Img/School/IMG_4273.jpg");
+}
+
+.pic17 {
+  background-image: url("../");
 }
 
 .pic1,
@@ -52,10 +124,18 @@ img {
 .pic12,
 .pic13,
 .pic14,
-.pic15 {
-  object-fit: cover;
-  object-position: center;
-  transition: all 0.4s ease;
+.pic15,
+.pic16,
+.pic17 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+  min-height: 450px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: moveup 0.5s forwards;
 }
 
 .pic1:hover,
@@ -74,7 +154,8 @@ img {
 .pic14:hover,
 .pic14:hover,
 .pic15:hover,
-video:hover {
+.pic16:hover,
+.pic17:hover {
   transform: translateY(-5px);
 }
 
@@ -102,23 +183,6 @@ video:hover {
   grid-column-end: 3;
 }
 
-video {
-  width: 100%;
-  height: 75%;
-  border-radius: 3px;
-  object-fit: cover;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-
-.vd {
-  height: 100%;
-  grid-row-start: 5;
-  grid-row-end: 6;
-  grid-column-start: 3;
-  grid-column-end: 5;
-}
-
 .anim {
   opacity: 0;
   transform: translateY(30px);
@@ -132,7 +196,7 @@ video {
 @keyframes moveup {
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(-2px);
   }
 }
 
@@ -142,5 +206,26 @@ video {
   .container {
     padding: 0 8px;
     padding-top: 75px;
+    padding-bottom: 10px;
+  }
+
+  .pic1,
+  .pic2,
+  .pic3,
+  .pic4,
+  .pic5,
+  .pic6,
+  .pic7,
+  .pic8,
+  .pic9,
+  .pic10,
+  .pic11,
+  .pic12,
+  .pic13,
+  .pic14,
+  .pic15,
+  .pic16,
+  .pic17 {
+    min-height: 100%;
   }
 }
