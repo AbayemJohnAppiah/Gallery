@@ -21,3 +21,19 @@ button.onclick = () => {
       ? 'white'
       : 'black';
 };
+
+// Using Intersection Observer (best approach)
+const lazyBackgrounds = document.querySelectorAll('.lazy-bg');
+
+const bgObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const div = entry.target;
+      div.style.backgroundImage = `url('${div.dataset.bg}')`;
+      div.classList.add('loaded');
+      bgObserver.unobserve(div);
+    }
+  });
+});
+
+lazyBackgrounds.forEach(bg => bgObserver.observe(bg));
