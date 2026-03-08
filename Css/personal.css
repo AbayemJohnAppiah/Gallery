@@ -42,81 +42,7 @@ body.dark {
   flex: 1;
 }
 
-.pic1 {
-  background-image: url("../Img/Personal/6213f1ed-bddb-43d2-af3d-e58e22d8799e.JPG");
-}
 
-.pic2 {
-  background-image: url("../Img/Personal/IMG_1095.JPG");
-}
-
-.pic3 {
-  background-image: url("../Img/Personal/IMG_0940 Medium.jpeg");
-}
-
-.pic4 {
-  background-image: url("../Img/Personal/2b60665f-08b1-4355-9807-907eaf689b98.JPG");
-}
-
-.pic5 {
-  background-image: url("../Img/Personal/IMG_4243.jpg");
-}
-
-.pic6 {
-  background-image: url("../Img/Personal/IMG_4423.JPG");
-}
-
-.pic7 {
-  background-image: url("../Img/Personal/IMG_7865.jpg");
-}
-
-.pic8 {
-  background-image: url("../Img/Personal/IMG_8163.JPG");
-}
-
-.pic9 {
-  background-image: url("../Img/Personal/IMG_3114.jpg");
-}
-
-.pic10 {
-  background-image: url("../Img/Personal/IMG_7063.jpg");
-}
-
-.pic11 {
-  background-image: url("../Img/Personal/IMG_8241.jpg");
-}
-
-.pic12 {
-  background-image: url("../Img/Personal/WhatsApp Image 2025-01-30 at 16.38.56_c1be2436.jpg");
-}
-
-.pic13 {
-  background-image: url("../Img/Personal/IMG_2752.jpg");
-}
-
-.pic14 {
-  background-image: url("../Img/Personal/IMG_3126.jpg");
-}
-
-.pic15 {
-  background-image: url("../Img/Personal/IMG_1703.jpg");
-}
-
-.pic16 {
-  background-image: url("../Img/Personal/IMG_1132.jpg");
-}
-
-.pic17 {
-  background-image: url("../Img/Personal/IMG_4241.jpg");
-}
-
-.pic18 {
-  background-image: url("../Img/Personal/22484996-b405-4d82-a6b3-956a1a06679b.JPG");
-}
-
-.pic19 {
-  background-image: url("../Img/Personal/IMG_3281.jpg");
-}
 
 .pic1,
 .pic2,
@@ -188,8 +114,8 @@ body.dark {
 }
 
 #pic1 {
-  object-fit: cover;
-  object-position: center;
+  background-size: cover;
+  background-position: center;
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 2;
@@ -205,8 +131,8 @@ body.dark {
 }
 
 #pic6 {
-  object-fit: cover;
-  object-position: center;
+  background-size: cover;
+  background-position: center;
   grid-row-start: 5;
   grid-row-end: 3;
   grid-column-start: 3;
@@ -222,8 +148,8 @@ body.dark {
 }
 
 #pic12 {
-  object-fit: cover;
-  object-position: center;
+  background-size: cover;
+  background-position: center;
   grid-row-start: 5;
   grid-row-end: 7;
   grid-column-start: 1;
