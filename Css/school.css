@@ -42,82 +42,6 @@ body.dark {
   flex: 1;
 }
 
-.pic1 {
-  background-image: url("../Img/School/IMG_4187 2.jpg");
-}
-
-.pic2 {
-  background-image: url("../Img/School/IMG_1094 2.jpg");
-}
-
-.pic3 {
-  background-image: url("../Img/School/IMG_2753 2.jpg");
-}
-
-.pic4 {
-  background-image: url("../Img/School/IMG_4186 2.jpg");
-}
-
-.pic5 {
-  background-image: url("../Img/School/IMG_4193 2.jpg");
-}
-
-.pic6 {
-  background-image: url("../Img/School/IMG_4270 2.jpg");
-}
-
-.pic7 {
-  background-image: url("../Img/School/IMG_4261 2.jpg");
-}
-
-.pic8 {
-  background-image: url("../Img/School/IMG_4264 2.jpg");
-}
-
-.pic9 {
-  background-image: url("../Img/School/IMG_4269 2.jpg");
-}
-
-.pic10 {
-  background-image: url("../Img/School/IMG_4280 2.jpg");
-}
-
-.pic11 {
-  background-image: url("../Img/School/IMG_4285 2.jpg");
-}
-
-.pic12 {
-  background-image: url("../Img/School/IMG_4277 2.jpg");
-}
-
-.pic13 {
-  background-image: url("../Img/School/IMG_4189 2.jpg");
-}
-
-.pic14 {
-  background-image: url("../Img/School/IMG_2886.jpg");
-}
-
-.pic15 {
-  background-image: url("../Img/School/IMG_7040.JPG");
-}
-
-.pic16 {
-  background-image: url("../Img/School/IMG_1105.jpg");
-}
-
-.pic17 {
-  background-image: url("../Img/School/IMG_1252.jpg");
-}
-
-.pic18 {
-  background-image: url("../Img/School/IMG_8154.JPG");
-}
-
-.pic19 {
-  background-image: url("../Img/School/IMG_4228.jpg");
-}
-
 .pic1,
 .pic2,
 .pic3,
@@ -186,8 +110,8 @@ body.dark {
 }
 
 #pic1 {
-  object-fit: cover;
-  object-position: center;
+  background-size: cover;
+  background-position: center;
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 2;
@@ -203,8 +127,8 @@ body.dark {
 }
 
 #pic6 {
-  object-fit: cover;
-  object-position: center;
+  background-size: cover;
+  background-position: center;
   grid-row-start: 5;
   grid-row-end: 3;
   grid-column-start: 3;
@@ -220,8 +144,8 @@ body.dark {
 }
 
 #pic12 {
-  object-fit: cover;
-  object-position: center;
+  background-size: cover;
+  background-position: center;
   grid-row-start: 5;
   grid-row-end: 7;
   grid-column-start: 1;
