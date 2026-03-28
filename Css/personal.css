@@ -213,9 +213,3 @@ body.dark {
     min-height: 250px;
   }
 }
-.lazy-bg {
-  background-color: #e0e0e0; /* grey placeholder */
-}
-.lazy-bg.loaded {
-  background-color: transparent;
-}
