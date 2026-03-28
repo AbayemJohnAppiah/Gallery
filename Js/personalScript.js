@@ -22,37 +22,9 @@ button.onclick = () => {
       : 'black';
 };
 
+// Using Intersection Observer (best approach)
+const lazyBackgrounds = document.querySelectorAll('.lazy-bg');
 
-// 1. Define your images in one place
-const images = {
-  pic1: "../Img/Personal/6213f1ed-bddb-43d2-af3d-e58e22d8799e.JPG",
-  pic2: "../Img/Personal/IMG_1095.JPG",
-  pic3: "../Img/Personal/IMG_0940 Medium.jpeg",
-  pic4: "../Img/Personal/2b60665f-08b1-4355-9807-907eaf689b98.JPG",
-  pic5: "../Img/Personal/IMG_4243.jpg",
-  pic6: "../Img/Personal/IMG_4423.JPG",
-  pic7: "../Img/Personal/IMG_7865.jpg",
-  pic8: "../Img/Personal/IMG_8163.JPG",
-  pic9: "../Img/Personal/IMG_3114.jpg",
-  pic10: "../Img/Personal/IMG_7063.jpg",
-  pic11: "../Img/Personal/IMG_8241.jpg",
-  pic12: "../Img/Personal/WhatsApp Image 2025-01-30 at 16.38.56_c1be2436.jpg",
-  pic13: "../Img/Personal/IMG_2752.jpg",
-  pic14: "../Img/Personal/IMG_3126.jpg",
-  pic15: "../Img/Personal/IMG_1703.jpg",
-  pic16: "../Img/Personal/IMG_1132.jpg",
-  pic17: "../Img/Personal/IMG_4241.jpg",
-  pic18: "../Img/Personal/22484996-b405-4d82-a6b3-956a1a06679b.JPG",
-  pic19: "../Img/Personal/IMG_3281.jpg",
-};
-
-// 2. Set the real data-bg on each div (not the <a> tag)
-Object.entries(images).forEach(([id, src]) => {
-  const div = document.querySelector(`div.${id}`);  // targets div by class, not id
-  if (div) div.dataset.bg = src;
-});
-
-// 3. IntersectionObserver lazy-loads only when visible
 const bgObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -62,11 +34,49 @@ const bgObserver = new IntersectionObserver((entries) => {
       bgObserver.unobserve(div);
     }
   });
-}, {
-  rootMargin: "200px"  // start loading 200px before it enters view
 });
 
-document.querySelectorAll('.lazy-bg').forEach(bg => bgObserver.observe(bg));
+lazyBackgrounds.forEach(bg => bgObserver.observe(bg));
+
+//images
+document.getElementById("pic1").style.backgroundImage =
+  "url('../Img/Personal/6213f1ed-bddb-43d2-af3d-e58e22d8799e.JPG')";
+document.getElementById("pic2").style.backgroundImage =
+  "url('../Img/Personal/IMG_1095.JPG')";
+document.getElementById("pic3").style.backgroundImage =
+  "url('../Img/Personal/IMG_0940 Medium.jpeg')";
+document.getElementById("pic4").style.backgroundImage =
+  "url('../Img/Personal/2b60665f-08b1-4355-9807-907eaf689b98.JPG')";
+document.getElementById("pic5").style.backgroundImage =
+  "url('../Img/Personal/IMG_4243.jpg')";
+document.getElementById("pic6").style.backgroundImage =
+  "url('../Img/Personal/IMG_4423.JPG')";
+document.getElementById("pic7").style.backgroundImage =
+  "url('../Img/Personal/IMG_7865.jpg')";
+document.getElementById("pic8").style.backgroundImage =
+  "url('../Img/Personal/IMG_8163.JPG')";
+document.getElementById("pic9").style.backgroundImage =
+  "url('../Img/Personal/IMG_3114.jpg')";
+document.getElementById("pic10").style.backgroundImage =
+  "url('../Img/Personal/IMG_7063.jpg')";
+document.getElementById("pic11").style.backgroundImage =
+  "url('../Img/Personal/IMG_8241.jpg')";
+document.getElementById("pic12").style.backgroundImage =
+  "url('../Img/Personal/WhatsApp Image 2025-01-30 at 16.38.56_c1be2436.jpg')";
+document.getElementById("pic13").style.backgroundImage =
+  "url('../Img/Personal/IMG_2752.jpg')";
+document.getElementById("pic14").style.backgroundImage =
+  "url('../Img/Personal/IMG_3126.jpg')";
+document.getElementById("pic15").style.backgroundImage =
+  "url('../Img/Personal/IMG_1703.jpg')";
+document.getElementById("pic16").style.backgroundImage =
+  "url('../Img/Personal/IMG_1132.jpg')";
+document.getElementById("pic17").style.backgroundImage =
+  "url('../Img/Personal/IMG_4241.jpg')";
+document.getElementById("pic18").style.backgroundImage =
+  "url('../Img/Personal/22484996-b405-4d82-a6b3-956a1a06679b.JPG')";
+document.getElementById("pic19").style.backgroundImage =
+  "url('../Img/Personal/IMG_3281.jpg')";
 
 //nav//
 /*marquee*/
